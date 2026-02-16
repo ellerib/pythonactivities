@@ -1,3 +1,4 @@
+# PERSON CLASS
 class person:
     #getter and setter
     #setter
@@ -28,7 +29,7 @@ class person:
         print("Address: ", self.get_address())
         #return (f"Name: get_name() \n Age: {self._age} \n Address: {self._age}")   
 
-# CLASS INFORMATION
+# INFORMATION CLASS
 class information():
     def __init__(self):
         self._information = []
