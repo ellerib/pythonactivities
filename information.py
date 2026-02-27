@@ -1,3 +1,5 @@
+import requests
+import json
 from information import person
 
 class information():
@@ -21,5 +23,22 @@ address = input("Enter address: ")
 
 person = person(name, age, address)
 database.addpersoninfo(person)
-
 database.showallinfo()
+
+url = "http://localhost/testing.php"
+
+data = {
+    "name": name,
+    "age": age,
+    "address": address
+}
+
+response = requests.post(
+    url,
+    data=json.dumps(data),
+    headers={"Content-Type":"application-json"}
+
+)
+
+print(response.json())
+

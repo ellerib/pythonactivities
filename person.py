@@ -7,7 +7,7 @@ class person:
 
     def set_age(self, age):
          
-        if age > 0:
+        if age > 0: 
             self._age = age         
         else:
             print ("Age is negative it must be positive")
@@ -30,7 +30,7 @@ class person:
         #return (f"Name: get_name() \n Age: {self._age} \n Address: {self._age}")   
 
 # INFORMATION CLASS
-class information():
+"""class information():
     def __init__(self):
         self._information = []
     
@@ -53,4 +53,4 @@ person = person(name, age, address)
 database.addpersoninfo(person)
 
 database.showallinfo()
-
+"""
